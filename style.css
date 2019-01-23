@@ -1,0 +1,185 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(80, 35, 138, 0.904);
+    overflow: hidden;
+}
+
+.krug{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    background-color: rgb(137, 39, 202);
+    border-radius: 50%;
+    border: 5px solid white;
+box-shadow: 0 20px 100px rgb(0,0,0,.5);
+font-family: 'Lobster', cursive;
+}
+.video{
+    position: absolute;
+   bottom: 0;
+   left: 40%;
+}
+
+.krug:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 8px dotted #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transform: scale(1.1);
+    animation: rotate 20s linear infinite;
+}
+h1{
+    margin: 40px 0 0 ;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    line-height: 60px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 0 15px 5px rgb(0,0,0,.5);
+}
+
+.efekat{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 240px;
+    height: 120px;
+    background-color: rgb(87, 15, 121);
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    box-shadow: 0 0 25px rgb(0,0,0,.5);
+    border: 5px solid white;
+}
+
+.efekat:before{
+    content:'';
+    position: absolute;
+    top: -80px;
+    left: calc(50% - 40px);
+    width: 40px;
+    height: 80px;
+    background-color: rgb(241, 227, 25);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transform-origin: bottom right;
+    filter: blur(2px);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+
+    0%{
+        transform: rotate(30deg);
+        box-shadow: 0 0 30px yellow;
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(15deg);
+        box-shadow: 0 0 100px  yellow;
+    }
+    75%{
+        transform: rotate(20deg);
+    }
+
+    100%{
+        transform: rotate(30deg);
+        box-shadow: 0 0 30px  yellow;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: scale(1.1) rotate(0deg);
+    }
+    100%{
+        transform: scale(1.1) rotate(360deg);
+
+    }
+}
+
+@media (max-width: 800px){
+
+  
+    .krug{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        height: 400px;
+        background-color: rgb(137, 39, 202);
+        border-radius: 50%;
+        border: 5px solid white;
+    box-shadow: 0 20px 100px rgb(0,0,0,.5);
+    font-family: 'Lobster', cursive;
+    }
+    .video{
+        position: absolute;
+       bottom: -70px;
+       left: 0%;
+      
+    }
+    
+    .krug:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 8px dotted #fff;
+        box-sizing: border-box;
+        border-radius: 50%;
+        transform: scale(1.1);
+        animation: rotate 20s linear infinite;
+    }
+    h1{
+        margin: 40px 0 0 ;
+        padding: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 40px;
+        line-height: 60px;
+        font-family: 'Lobster', cursive;
+        text-shadow: 0 15px 5px rgb(0,0,0,.5);
+    }
+    
+    .efekat{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 240px;
+        height: 120px;
+        background-color: rgb(87, 15, 121);
+        border-bottom-left-radius: 120px;
+        border-bottom-right-radius: 120px;
+        box-shadow: 0 0 25px rgb(0,0,0,.5);
+        border: 5px solid white;
+    }
+    
+    .efekat:before{
+        content:'';
+        position: absolute;
+        top: -80px;
+        left: calc(50% - 40px);
+        width: 40px;
+        height: 80px;
+        background-color: rgb(241, 227, 25);
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        transform-origin: bottom right;
+        filter: blur(2px);
+        animation: animate 5s linear infinite;
+    }
+    
+    }
